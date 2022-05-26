@@ -21,7 +21,7 @@ spec:
   adminServerSecure: true
   enableMetrics: true
   createDashboardUsers: true
-  barURL: https://{{ARTIFACTORY_HOST}}:{{ARTIFACTORY_PORT}}/{{ARTIFACTORY_REPO}}/{{ARTIFACTORY_BASE_PATH}}/{{BAR_FILE}}
+  barURL: https://afahmy.jfrog.io/ui/native/:{{ARTIFACTORY_PORT}}/{{ARTIFACTORY_REPO}}/{{ARTIFACTORY_BASE_PATH}}/{{BAR_FILE}}
   configurations: [ bar-auth-config {{CONFIGURATION_LIST}} ]
   router:
     timeout: 120s
