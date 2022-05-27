@@ -18,7 +18,7 @@ spec:
           requests:
             cpu: 300m
             memory: 300Mi
-  adminServerSecure: true
+  adminServerSecure: false
   enableMetrics: true
   createDashboardUsers: true
   barURL: https://afahmy.jfrog.io:{{ARTIFACTORY_PORT}}/artifactory/{{ARTIFACTORY_REPO}}/{{ARTIFACTORY_BASE_PATH}}/{{BAR_FILE}}
@@ -26,8 +26,10 @@ spec:
   router:
     timeout: 120s
   designerFlowsOperationMode: disabled
+  replicas: 1
+  router:
+    timeout: 120s
   service:
     endpointType: http
   version: '12.0'
-  replicas: 1
   logFormat: basic
